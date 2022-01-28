@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+.RedTekst{
+    color: red;
+    }
+    .blueTekst{
+        color: blue;
+    }
+.large{
+    font-size: xx-large;
+}
+#big{
+    font-size: x-large;
+}
+#center{
+    text-align: center;
+}
+#right{
+    text-align:right
+}
+    
