@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Additional Task</title>
+    <title>CSS1.6</title>
 
-   <link rel="stylesheet" href="screenStyle.css" media="screen">
-   <link rel="stylesheet" href="printStyle.css" media="print">
+   <style>
+       @import url("../screen.css") screen;
+       @import url("../print.css") print;
+       
+   </style>
 </head>
+
 <body>
 <h1>Заголовок первого уровня</h1>
 <h2">Предварительно форматированный текст:</h2>
@@ -26,11 +30,11 @@ o | x | o
 <h2>Семантические и функциональные строчные теги</h2>
 
 Пожелания автора:<br>
-<span class="RedTekst">
+<span class="RedText">
     <del>Данный текст убрать из монографии</del>
 </span>
 <span>и заменить его на</span>
-<span class="blueTekst">
+<span class="blueText">
     <ins>вновь помещённый текст.</ins>
     
 </span>
