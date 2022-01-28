@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Forms</title>
+
+</head>
+<body>
+    <br>
+    <span><em>Рекомендации к выполнению работы:</em></span>
+    <ul>
+        <li><em>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца</em></li>
+        <li><em>Каждая форма должна правильно заполненные атрибуты name, method и action.</em></li>
+        <li><em>Для атрибута action, воспользуйтесь значением "http://sc.it-academy.by/fe/form.php" - небольшой
+            скрипт показывающий переменные переданные методами post и get.
+            </em></li>
+    </ul>
+    <form name="search" action="http://fe.it-academy.by/TestForm.php"  method="get" target="_blank">  </form>     
+    <table style="text-align: left" width="700" border="0" >
+       
+        <tr>
+            <th>Простая форма поиска с вариантами:</th>
+            <th>Простая форма поиска с вариантами:</th>
+            
+        </tr>
+        <tr>
+            <td> 
+                <fieldset><legend>Строка поиска</legend>
+                  <input type="text" name="search" maxlength="10">
+                  <input type="submit" value="искать">
+                  <br>
+                  <input type="radio" name="radio" value="на сайте" > на сайте
+                  <input type="radio" name="radio" value="на сайте"> в google<br>
+                  <em>Длина запроса не более 10 символов</em>
+                 
+                 </fieldset>
+            </td>
+            <td> 
+                  <fieldset><legend>Строка поиска</legend>
+                  <input type="text" name="search" autofocus> *
+                  <input type="submit" value="искать">
+                  <br>
+                  <input type="radio" name=radio value="на сайте" > на сайте
+                  <input type="radio"  name=radio value="на сайте"> в google<br>
+                  <em>*-обязательное поле</em><br>
+                  <em>Автофокус в поле поиска</em>
+                  
+                  
+                  
+                  </fieldset>
+            </td>
+        </tr>
+        
+        <tr>
+            <th>Простая форма авторизации:</th>
+            <th>Опрос(голосование):</th>
+        </tr>
+            <tr>
+                <td> 
+                <fieldset><legend>Авторизуйтесь</legend>
+                  <input type="text" name="search">* Логин<br>
+                  <input type="text" name="search">* Пароль<br>
+                  <input type="checkbox" value="на сайте"> Оставаться в системе<br>
+                  <input type="submit" value="войти"><br>
+                  <em>* - обязательное поле</em>
+                 </fieldset>
+              </td>
+              <td>   
+                  <fieldset><legend>Как вам?</legend>
+                     <input type="radio" name="radio" value="radio1" > ничего  <br>
+                     <input type="radio" name="radio" value="radio2" > неплого<br>
+                     <input type="radio" name="radio" value="radio3" > хорошо<br>
+                     <input type="radio" name="radio" value="radio4" > супер<br>
+                     <input type="submit" value="Oтправить"><br>
+                     <input type="hidden" name="date_voite" value="2013.12.31">
+                     <em>Есть скрытое поле</em>
+                    </fieldset>     
+                </td></tr> 
+                <tr>
+                    <th>Отзыв</th>
+                    <th>Выподающий и мульти списки</th>
+                </tr>
+                <form name="search" action="http://fe.it-academy.by/TestForm.php"  method="post" target="_blank">  </form>
+                <tr>
+                    <td> 
+                    <fieldset><legend>Оставте ваш отзыв</legend>
+                      <input type="text" name="search">* Имя<br>
+                      <input type="email" name="e-mail">* e-mail<br>
+                      <input type="submit" value="Отправить"><br>
+                      <em>* - обязательное поле</em><br>
+                      <em> поле e-mail с проверкой </em><br>
+                      <em>метод POST</em>
+                     </fieldset>
+                  </td>
+                  <td>   
+                      <fieldset><legend>Города РБ</legend>
+                         <input type="radio" name="radio" value="radio1" > ничего  <br>
+                         <input type="radio" name="radio" value="radio2" > неплого<br>
+                         <input type="radio" name="radio" value="radio3" > хорошо<br>
+                         <input type="radio" name="radio" value="radio4" > супер<br>
+                         <input type="submit" value="Oтправить"><br>
+                        </fieldset>     
+                    </td></tr> 
+                  
+                   
+               
+            
+    
+        
+      
+              
+        </table>
+      
+            
+            
+            
+            
+
+    </table>
+</body>     
+</html>
