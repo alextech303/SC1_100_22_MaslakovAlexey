@@ -16,7 +16,7 @@
             скрипт показывающий переменные переданные методами post и get.
             </em></li>
     </ul>
-    <form name="search" action="http://fe.it-academy.by/TestForm.php"  method="get" target="_blank">  </form>     
+          
     <table style="text-align: left" width="700" border="0" >
        
         <tr>
@@ -26,14 +26,16 @@
         </tr>
         <tr>
             <td> 
-                <fieldset><legend>Строка поиска</legend>
+                <fieldset>
+                    <form name="search" action="http://fe.it-academy.by/TestForm.php"  method="get" target="_blank">
+                    <legend>Строка поиска</legend>
                   <input type="text" name="search" maxlength="10">
                   <input type="submit" value="искать">
                   <br>
                   <input type="radio" name="radio" value="на сайте" > на сайте
                   <input type="radio" name="radio" value="на сайте"> в google<br>
                   <em>Длина запроса не более 10 символов</em>
-                 
+                </form>
                  </fieldset>
             </td>
             <td> 
@@ -45,25 +47,26 @@
                   <input type="radio"  name=radio value="на сайте"> в google<br>
                   <em>*-обязательное поле</em><br>
                   <em>Автофокус в поле поиска</em>
-                  
-                  
-                  
                   </fieldset>
             </td>
         </tr>
-        
+    </form>
         <tr>
             <th>Простая форма авторизации:</th>
             <th>Опрос(голосование):</th>
         </tr>
             <tr>
                 <td> 
-                <fieldset><legend>Авторизуйтесь</legend>
+                <fieldset>
+                    <form name="text" action="http://fe.it-academy.by/TestForm.php"  method="get" target="_blank"> 
+                    <legend>Авторизуйтесь</legend>
                   <input type="text" name="search">* Логин<br>
-                  <input type="text" name="search">* Пароль<br>
+                  <input id="pass" type="password" name="search">
+                  <label for="pass">* Пароль<br></label>
                   <input type="checkbox" value="на сайте"> Оставаться в системе<br>
                   <input type="submit" value="войти"><br>
                   <em>* - обязательное поле</em>
+                  </form>
                  </fieldset>
               </td>
               <td>   
@@ -81,7 +84,7 @@
                     <th>Отзыв</th>
                     <th>Выподающий и мульти списки</th>
                 </tr>
-                <form name="search" action="http://fe.it-academy.by/TestForm.php"  method="post" target="_blank">  </form>
+               
                 <tr>
                     <td> 
                     <fieldset><legend>Оставте ваш отзыв</legend>
@@ -94,29 +97,66 @@
                      </fieldset>
                   </td>
                   <td>   
-                      <fieldset><legend>Города РБ</legend>
-                         <input type="radio" name="radio" value="radio1" > ничего  <br>
-                         <input type="radio" name="radio" value="radio2" > неплого<br>
-                         <input type="radio" name="radio" value="radio3" > хорошо<br>
-                         <input type="radio" name="radio" value="radio4" > супер<br>
-                         <input type="submit" value="Oтправить"><br>
+                    
+                      <fieldset>
+                        <form name="select" action="http://fe.it-academy.by/TestForm.php"  method="get" target="_blank">
+                          <legend>Города РБ</legend>
+                        <select name="list" id="list">
+                            <!-- <input type="submit" value="OK"> -->
+                           
+                            <optgroup label="Города РБ">
+                                <option value="0" selected>Город</option>
+                                <option value="1">Брест</option>s
+                                <option value="2">Минск</option>
+                                <option value="3">Витебск</option>
+                          </optgroup>
+                          <optgroup label="Города России">
+                                <option value="4">Москва</option>
+                                <option value="5">Рязань</option>
+                                <option value="6">Магадан</option>
+                                
+                          </optgroup>
+                            
+                            </select>
+                            <input type="submit" value="ok">
+                            
                         </fieldset>     
                     </td></tr> 
-                  
-                   
-               
+                </form>
+                
+                <tr>
+                    <th>Загрузка файла на сервер:</th>
+                    <th>Валидация файла HTML5:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Upload</legend>
+                            <form name="select" action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data"  method="post" target="_blank">
+                            
+                            Файл:<br>
+                        <input type="file" name="file" dir="ltr"><br>
+                        срок хранения(года)<br>
+                        <input type="text" name="search" >
+                        <input type="submit" value="загрузить">
+                    </form>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset><legend>Строка поиска</legend>
+                            <form id="check" name="search" action="http://fe.it-academy.by/TestForm.php"  method="get" target="_blank">
+                        <input type="search" name="search" placeholder="только русские буквы" required pattern="[а-яА-Я] "><br>
+                        <em>Телефонный номер в формате</em><br>
+                        <em>+XX-XXX-XXXXXX, где X - любое число</em><br>
+                        <input type="search" name="search"  required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$">
+                        <input type="button" value="проверить">
+                            </form>
+                    </fieldset>  
+                    </td>
+                </tr>
+                
+        </table>
             
     
-        
-      
-              
-        </table>
-      
-            
-            
-            
-            
-
-    </table>
 </body>     
 </html>
