@@ -1,0 +1,22 @@
+.rightItalic{
+    text-align: right;
+    font-style:italic;
+}
+.newStyle{
+    font-style:var();
+}
+
+#right{
+    text-align: right;
+    line-height: 0.1;
+}
+#ItalicUnderline{
+     text-decoration: underline; 
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+       
+}
+#new{
+    font-family:cursive
+}
