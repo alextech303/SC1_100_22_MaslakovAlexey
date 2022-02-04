@@ -12,27 +12,45 @@
                background-color: black;
                text-align: left;
                color: rgb(56, 247, 8);
-               overflow:auto;
+               overflow: auto;
 
         }
         #list{
             width: 350;
         }
+        #firstLi{
+          
+            list-style-type:upper-roman;
+            font-weight: bold;
+            text-align: left;
+         }  
+        li{
+            list-style-type:lower-roman;
+        }
     </style>
 </head>
 <body>
-    <p style="white-space:pre-wrap">
-        <strong>&#8544. Контейнер с кодом</strong>
-                i. Цвет фона: черный
-               ii. Цвет текста: зеленый
-              iii. Ширина 400px
-               iv. Максимальная высота контейнера: 4-е строки
-                v. Переполнение: автоматическое
-        <strong>&#8545. Список</strong>
-                i. Ширина: 350px
-               ii. Тип списка: римские цифры
-              iii. Тип вложенного списка: римские нижний регистр цифры
-    </p>
+   
+    <div> 
+       
+        <ul>
+       <li id="firstLi"> Контейнер с кодом</li>
+             <li> Цвет фона: черный</li>  
+             <li> Цвет текста: зеленый</li> 
+             <li> Ширина 400px</li>
+             <li> Максимальная высота контейнера: 4-е строки</li> 
+             <li>Переполнение: автоматическое</li> 
+       </ul>
+        
+
+     <ul>
+        <li id="firstLi">Список</li>
+         <li>Ширина: 350px</li> 
+        <li>Тип списка: римские цифры</li>
+        <li>Тип вложенного списка: римские нижний регистр цифры</li></ul>   
+    </ul>
+</div>
+   
     <div class="centerBlock">
         <code id="list">
             #!/usr/bin/env python<br>
