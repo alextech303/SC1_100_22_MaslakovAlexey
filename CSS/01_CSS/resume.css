@@ -1,22 +1,23 @@
+
 .rightItalic{
     text-align: right;
     font-style:italic;
 }
-.newStyle{
-    font-style:var();
-}
+
 
 #right{
     text-align: right;
     line-height: 0.1;
 }
-#ItalicUnderline{
-     text-decoration: underline; 
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-       
+#Caveat2{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: underline;
+    
 }
-#new{
-    font-family:cursive
+
+#Caveat{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
 }
