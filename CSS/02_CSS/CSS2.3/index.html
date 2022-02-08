@@ -4,37 +4,63 @@
     <meta charset="UTF-8">
     <title>CSS2.3</title>
 <style>
+
+    body{
+        font-size: 20px;
+    }
     .blockNavigation{
         background-color: rgba(87, 85, 85, 0.87);
-        width: 15cm;
-        height: 10cm;
-        /* float:left; */
+        width: 15em;
+        height: 30em;
+        float: left;
+        
     }
-    .underBlockNavigation{
-        width: 15cm;
-        height: 10cm;
+   
+       .footer{
         background-color: rgba(95, 92, 92, 0.705);
-    }
-    .rightBlockNavigation{
+        clear: both; 
+     }
+    .Article{
         background-color: rgba(32, 31, 31, 0.87);
-        text-align: right;
+        margin-bottom: .2em;
+    }
+    .clear{
+        clear: both;
     }
 </style>
 </head>
 <body>
-    
-    <div >
-        
+   
      <div class="blockNavigation"><span><strong>Блок навигации</strong></span>
         <ul> 
-            <li>Ширина 15см</li>
-            <li>Должен присутствовать цвет фона</li>
+            <li>Ширина 15eм</li>
+            <li>Должен присутствовать цвеsт фона</li>
             <li>Распологается слева</li>
             <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начал захватывать вторую статью, 
                 как показано в данном примере</li>
-        </ul></div> 
-        <div class="underBlockNavigation"> </div>
-        <div class="rightBlockNavigation"> ddddd</div>
+        </ul>
+     </div>
+     <div class="Article" >   <strong>Статья 1</strong><br>
+        <br>
+        Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+        <br>
+        <br> 
+        
     </div>
+    <div class="Article"> <strong>Статья 2</strong> <br>
+        <br>
+        Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom.Картинка вставлена при помощи тега,
+        плавание организовано по правому краю внутри данной статьи для этой картинки. 
+        
+    <div class="clear"></div>
+    </div>
+       
+        <div class="footer"> Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом</div>
 </body>
 </html>
