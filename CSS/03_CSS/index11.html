@@ -4,44 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <style>
-        table{
-text-align: center;
-width: 400;
-            border: 2;
-
+    <style>
+        .Menu1{
+           background-color: gray; 
+           width: 100px;
         }
-
+        .Menu2{
+            width: 150px;
+            display: none;
+            background-color: green;
+        }
     </style>
+    <title>Document</title>
 </head>
 <body>
-    <table>
-   
-    <tr>
-        <th>Понедельник</th>
-        <th>Вторник</th>
-        <th>Среда</th>
-        <th>Четверг</th>
-        <th>Пятница</th>
-        <th>Суббота</th>
-        <th>Восресение</th>
-
-    </tr>
-    <tr>
-        <th>Минск</th>
-        <td>-5&#176</td>
-        <td>+5<sup><small>o</small></sup></td>
-        <td rowspan="2">+2&#176</td>
-        <td>-10&#176</td>
-    </tr>
-    <tr>
-        <th>Брест</th>
-        <td>0&#176</td>
-        <td>+9&#176</td>
-        <td>-4&#176</td>
-    </tr>
-</table>
     
+<div class="Menu1">
+    <div>пункт1</div>
+</div>
+<div>
+    Пункт2
+    <div class="Menu2">
+    <div>Выпадающее меню2.1</div>
+    <div>Выпадающее меню2.2</div>
+    <div>Выпадающее меню2.3</div>
+</div>
+</div>
+<div>
+    Пункт 3
+    <div class="Menu2">
+       <div>Выпадающее меню3.1</div> 
+       <div>Выпадающее меню3.2</div> 
+    </div>
+</div>
+<div>пункт 4</div>
+<div>пункт 5</div>
+
 </body>
 </html>
