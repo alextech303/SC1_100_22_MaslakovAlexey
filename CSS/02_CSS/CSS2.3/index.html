@@ -8,12 +8,24 @@
     body{
         font-size: 20px;
     }
+
     .blockNavigation{
-        background-color: rgba(87, 85, 85, 0.87);
         width: 15em;
-        height: 30em;
+        background-color: rgba(240, 16, 16, 0.87);
+        height: 14.7em;
+
+        border: 0px solid black; /* Параметры рамки */
+        padding: 0px; /* Поля вокруг текста */
+        margin-left: 0px; /* Отступ справа */
         float: left;
         
+    }
+
+    #underBlockNavigation{
+        width: 15em;
+        background-color: rgba(61, 240, 16, 0.87);
+        height: 5em;
+     
     }
    
        .footer{
@@ -22,23 +34,28 @@
      }
     .Article{
         background-color: rgba(32, 31, 31, 0.87);
+        margin-left: 15em;
         margin-bottom: .2em;
     }
     .clear{
-        clear: both;
-    }
+         clear: both; 
+     } 
 </style>
+
 </head>
 <body>
    
      <div class="blockNavigation"><span><strong>Блок навигации</strong></span>
         <ul> 
             <li>Ширина 15eм</li>
-            <li>Должен присутствовать цвеsт фона</li>
+            <li>Должен присутствовать цвет фона</li>
             <li>Распологается слева</li>
             <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начал захватывать вторую статью, 
                 как показано в данном примере</li>
         </ul>
+        <div id = "underBlockNavigation" >
+
+        </div>
      </div>
      <div class="Article" >   <strong>Статья 1</strong><br>
         <br>
@@ -57,11 +74,11 @@
         Должен присутствовать цвет фона<br>
         Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom.Картинка вставлена при помощи тега,
         плавание организовано по правому краю внутри данной статьи для этой картинки. 
-       <img src="CSS\02_CSS\CSS2.3\home.png" alt="a" title="ss" align="right"  >
+       <img src="home.png" alt="a" title="ss" align="right"  >
         
-    <div class="clear"></div>
+    <!-- <div class="clear"></div> -->
     </div>
-       <div class="clear"></div>
+       <!-- <div class="clear"></div> -->
         <div class="footer"> Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом</div>
 </body>
 </html>
