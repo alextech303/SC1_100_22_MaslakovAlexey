@@ -5,14 +5,14 @@
     <title>CSS2.3</title>
 <style>
 
-    body{
+    /* body{
         font-size: 20px;
-    }
+    } */
 
     .blockNavigation{
         width: 15em;
         background-color: rgba(90, 94, 93, 0.87);
-        height: 14.7em;
+        height: 14.5em;
 
         border: 0px solid black; /* Параметры рамки */
         padding: 0px; /* Поля вокруг текста */
@@ -23,14 +23,14 @@
 
     #underBlockNavigation{
         width: 15em;
-        background-color: rgba(168, 172, 167, 0.87);
-        height: 12.4em;
+        background-color: rgba(187, 180, 180, 0.87);
+        height: 10em;
      
     }
    
        .footer{
         background-color: rgba(95, 92, 92, 0.705);
-        clear: both; 
+        /* clear: both;  */
      }
     .Article{
         background-color: rgba(32, 31, 31, 0.87);
@@ -40,6 +40,10 @@
     .clear{
          clear: both; 
      } 
+
+     img{
+        float:right;
+     }
 </style>
 
 </head>
@@ -74,7 +78,7 @@
         Должен присутствовать цвет фона<br>
         Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom.Картинка вставлена при помощи тега,
         плавание организовано по правому краю внутри данной статьи для этой картинки. 
-       <img src="mail.png" alt="a" title="ss" align="right" width=100px >
+       <img src="mail.png" alt="a" title="mail" width=100px >
         
     <div class="clear">
     
@@ -83,7 +87,6 @@
       </br>   
     </div>
     </div>
-       <!-- <div class="clear"></div> -->
         <div class="footer"> Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом</div>
 </body>
 </html>
